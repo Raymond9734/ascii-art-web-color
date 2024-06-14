@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii Test</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ASCII Art Generator</h1>
+        <form action="/ascii" method="post">
+            <textarea name="input" cols="30" rows="10" placeholder="Input your text"></textarea>
+            <select name="banner">
+                <option value="shadow">Shadow</option>
+                <option value="standard" selected>Standard</option>
+                <option value="thinkertoy">Thinkertoy</option>
+            </select>
+            <button type="submit">Print</button>
+        </form>
+        <div id="cont">
+            <pre>{{.Ascii}}</pre>
+        </div>
+    </div>
+</body>
+</html>

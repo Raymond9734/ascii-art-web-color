@@ -1,0 +1,90 @@
+/* Reset some basic elements */
+body, h1, form, textarea, select, button, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form elements styling */
+h1 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ASCII Art display styling */
+#cont {
+    margin-top: 2em;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 200px;
+    overflow: auto;
+    white-space: pre-wrap;
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+}
+
+/* Ensure the container grows as content increases */
+#cont pre {
+    display: inline-block;
+    width: 100%;
+}
