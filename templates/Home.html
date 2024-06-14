@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ascii Test</title>
     <link rel="stylesheet" href="/static/styles.css">
+   
 </head>
 <body>
     <div class="container">
@@ -16,10 +17,19 @@
                 <option value="standard" selected>Standard</option>
                 <option value="thinkertoy">Thinkertoy</option>
             </select>
+            <select name="color">
+                <option value="white"selected>White</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="cyan">Cyan</option>
+                <option value="magenta">Magenta</option>
+                <option value="yellow">Yellow</option>
+            </select>
             <button type="submit">Print</button>
         </form>
         <div id="cont">
-            <pre>{{.Ascii}}</pre>
+            <pre class="{{.Color}}">{{.Ascii}}</pre>
         </div>
     </div>
 </body>

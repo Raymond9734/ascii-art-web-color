@@ -4,7 +4,9 @@ body, h1, form, textarea, select, button, div {
     padding: 0;
     box-sizing: border-box;
 }
-
+/* :root {
+    --color: {{.Color}};
+} */
 /* General body styling */
 body {
     font-family: Arial, sans-serif;
@@ -73,7 +75,7 @@ button:hover {
 #cont {
     margin-top: 2em;
     padding: 10px;
-    background: #f0f0f0;
+    background: black;
     border-radius: 5px;
     width: 100%;
     min-height: 200px;
@@ -81,10 +83,34 @@ button:hover {
     white-space: pre-wrap;
     font-family: "Courier New", Courier, monospace;
     text-align: left;
+   
+   
 }
 
 /* Ensure the container grows as content increases */
 #cont pre {
     display: inline-block;
     width: 100%;
+}
+
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.green {
+    color: green;
+}
+.yellow {
+    color: yellow;
+}
+.magenta {
+    color: magenta;
+}
+.cyan {
+    color: cyan;
+}
+.white {
+    color: white;
 }

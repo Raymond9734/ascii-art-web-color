@@ -21,6 +21,8 @@ func PrintAscii(w http.ResponseWriter, r *http.Request) {
 
 	text := r.FormValue("input")
 	banner := r.FormValue("banner")
+	color := r.FormValue("color")
+	fmt.Println(color)
 
 	str := strings.Split(text, "\r\n")
 	var art string
@@ -40,7 +42,7 @@ func PrintAscii(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Internal server Error", http.StatusInternalServerError)
 		return
 	}
-	contents := content{Ascii: art}
+	contents := content{Ascii: art, Color: color}
 	tmp.Execute(w, contents)
 
 }
